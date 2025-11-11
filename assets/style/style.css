@@ -286,12 +286,19 @@ footer a {
 }
 
 .nav-brand {
-    font-size: 1.05rem;
-    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
     color: #ffffff;
     text-decoration: none;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
+}
+
+.nav-brand img {
+    height: 90px;
+    width: auto;
+    display: block;
+    filter: drop-shadow(0 8px 18px rgba(15, 23, 42, 0.35));
+    position: absolute;
 }
 
 .nav-links {
