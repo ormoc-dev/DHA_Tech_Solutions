@@ -695,13 +695,12 @@ footer a {
     .chat-widget {
         bottom: 16px;
         right: 16px;
-        width: calc(100% - 32px);
-        align-items: stretch;
+        align-items: flex-end;
     }
 
     .chat-window {
-        width: 100%;
-        max-height: 80vh;
+        width: min(320px, calc(100vw - 48px));
+        max-height: 78vh;
         border-radius: 16px;
     }
 
@@ -718,7 +717,6 @@ footer a {
     .chat-input {
         padding: 14px 16px;
         gap: 10px;
-        flex-wrap: wrap;
     }
 
     .chat-input input {
@@ -728,8 +726,7 @@ footer a {
     }
 
     .chat-input button {
-        width: 100%;
-        padding: 12px;
+        padding: 12px 16px;
         font-size: 0.95rem;
     }
 
